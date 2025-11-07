@@ -1,4 +1,5 @@
 import java.util.Scanner;
+// Defining custom exception
  class InvalidDimException extends Exception{
     public InvalidDimException(String  message){
         super(message);
@@ -8,6 +9,7 @@ public class Rectangle {
     public static void main(String[] args) throws InvalidDimException{
         float length;
         float width;
+        // creating obj of scanner class
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter Length:");
         length=sc.nextFloat();
@@ -22,6 +24,7 @@ public class Rectangle {
             System.out.println("Area:"+area+"sq.cm");
         }
         else{
+            // throw exception
             throw new InvalidDimException("Dimension can not be negative");
         }
     }
