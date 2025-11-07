@@ -41,4 +41,4 @@ public class EvenNo_inArray{
       Even even=new Even();
       even.display();
     }
-}
+} 
